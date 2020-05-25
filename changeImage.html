@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image changing</title>
+    <style>
+        body{
+            background-color: red;
+        }
+        
+        .border{
+            border:solid;
+            border-color: yellow;
+            margin-left: 350px;
+            margin-top: 25px;
+            height: 550px;
+            width: 500px;
+            }
+        
+    </style>
+    <script language="javascript">
+        function changeImage() {
+    
+            if (document.getElementById("imgClickAndChange").src == "https://cache.desktopnexus.com/thumbseg/308/308116-bigthumbnail.jpg") 
+            {
+                document.getElementById("imgClickAndChange").src = "https://images.squarespace-cdn.com/content/v1/542c45dde4b0d98023e387e7/1585675605689-HCZEQROCTD1ZIFUQHT8F/ke17ZwdGBToddI8pDm48kGDpvalPb1SqHoCn1hwN0Y57gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QHyNOqBUUEtDDsRWrJLTmQPoRzxSr1hzN-vPBHt7YyLLXgctAyUJRqJUUGWVDK_ZzIgvsybGcZEPqUYiXY8im/ntile93.jpg?format=500w";
+            }
+            else 
+            {
+                document.getElementById("imgClickAndChange").src = "https://coppermoosefarm.com/wp-content/uploads/2015/01/New-Moon-Flowers-e1422227028668-500x500.jpg";
+            }
+            
+        }
+        function displayText(){
+            document.getElementById("imgClickAndChange").src = "https://coppermoosefarm.com/wp-content/uploads/2015/01/New-Moon-Flowers-e1422227028668-500x500.jpg";
+  console.log("This is an image");
+
+}
+        
+    </script>
+</head>
+    <body >
+        <div >      
+        
+            <img onmouseover="displayText()" alt="" src="https://cache.desktopnexus.com/thumbseg/308/308116-bigthumbnail.jpg" 
+            id= "imgClickAndChange" onclick="changeImage()"   class="border"/>
+                
+            
+        </div> 
+
+
+</body>
+</html>
