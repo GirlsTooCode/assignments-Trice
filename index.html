@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+​
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disappearing div</title>
+    
+        <style>
+            #div1{
+                height: 200px;
+                background-color: rgb(92, 105, 101);
+            }
+            #div2{
+                height: 200px;
+                background-color: yellow;
+            }
+        </style>
+        
+​</head>
+
+<body>
+    ​<script>
+        function disappear() {
+            document.getElementById("div1").style.display = "none";
+        }
+        //document.getElementById("div1").onclick =divDisappear;
+        function increaseHeight(){
+        document.getElementById("div2").style.height="400px";
+    }
+    document.getElementById("div2").onmouseover =increaseHeight
+    </script>
+    ​
+    <div id="div1" onclick = "disappear()" >
+        <p>Make me Disappear</p>
+    </div> 
+​
+    <div id="div2"  >
+        <p>Change my height</p>
+    </div>
+​
+​
+</body>
+​
+</html>
